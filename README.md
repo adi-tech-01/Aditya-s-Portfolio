@@ -9,7 +9,7 @@ Designed for students and developers who want a **clean, professional personal w
 
 View the portfolio live:
 
-[https://Aditya](https://adi-tech-01.github.io/Aditya-s-Portfolio/)
+[https://Aditya_Behera's Portfolio](https://adi-tech-01.github.io/Aditya-s-Portfolio/)
 
 ---
 
