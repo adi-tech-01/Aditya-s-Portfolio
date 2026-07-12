@@ -9,7 +9,7 @@ Designed for students and developers who want a **clean, professional personal w
 
 View the portfolio live:
 
-[https://sachindeepak.dev](https://sachin-deepak-s.netlify.app/)
+[https://Aditya](https://adi-tech-01.github.io/Aditya-s-Portfolio/)
 
 ---
 
