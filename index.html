@@ -255,6 +255,22 @@ nav.scrolled{padding:1rem 3rem;background:var(--nav-bg);backdrop-filter:blur(10p
 .project-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;margin-bottom:.3rem}
 .project-desc{font-size:.8rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.8rem}
 
+/* ===================== CERTIFICATES ===================== */
+.certificates{padding:7rem 5rem;background:var(--bg-secondary)}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.5rem}
+.cert-card{border:1px solid var(--border-color);background:var(--bg-tertiary);transition:all .3s;overflow:hidden;display:flex;flex-direction:column}
+.cert-card:hover{border-color:var(--accent-gold);transform:translateY(-5px);box-shadow:0 15px 40px var(--shadow-color)}
+.cert-image{width:100%;height:220px;overflow:hidden;border-bottom:1px solid var(--border-color)}
+.cert-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cert-card:hover .cert-image img{transform:scale(1.05)}
+.cert-content{padding:2rem;display:flex;flex-direction:column;flex:1}
+.cert-icon{font-size:2rem;color:var(--accent-gold);margin-bottom:1rem}
+.cert-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;margin-bottom:.5rem}
+.cert-issuer{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem}
+.cert-date{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--text-secondary);padding:.2rem .6rem;border:1px solid var(--border-color);margin-bottom:1rem}
+.cert-link{display:inline-flex;align-items:center;gap:.5rem;font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--accent-gold);text-decoration:none;text-transform:uppercase;letter-spacing:.1em;transition:all .3s}
+.cert-link:hover{color:var(--accent-gold-light);gap:.8rem}
+
 /* ===================== CONTACT ===================== */
 .contact{padding:7rem 5rem;background:var(--bg-secondary)}
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
@@ -293,7 +309,7 @@ footer{padding:2rem 5rem;border-top:1px solid var(--border-color);display:flex;j
 @media(max-width:480px){.hero-name{font-size:clamp(2.5rem,8vw,4rem)}.btn-primary,.btn-secondary,.btn-share{width:100%;justify-content:center}.hero-cta{flex-direction:column}.stats-grid{grid-template-columns:1fr}.edu-stats{grid-template-columns:1fr}.profile-frame{width:260px;height:340px}}
 </style>
 </head>
-<body>
+         <body>
 
 <div class="cursor" id="cursor"></div>
 <div class="cursor-follower" id="cursorFollower"></div>
@@ -312,6 +328,7 @@ footer{padding:2rem 5rem;border-top:1px solid var(--border-color);display:flex;j
     <li><a href="#education">Education</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certificates</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="mailto:Adityakumar.sn@gmail.com?subject=Hello%20Aditya" class="nav-cta">Say Hello</a></li>
   </ul>
@@ -328,6 +345,7 @@ footer{padding:2rem 5rem;border-top:1px solid var(--border-color);display:flex;j
   <a href="#education" onclick="toggleMobileMenu()">Education</a>
   <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
   <a href="#projects" onclick="toggleMobileMenu()">Projects</a>
+  <a href="#certificates" onclick="toggleMobileMenu()">Certificates</a>
   <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
   <a href="mailto:Adityakumar.sn@gmail.com?subject=Hello%20Aditya" class="mobile-cta" onclick="toggleMobileMenu()">Say Hello</a>
 </div>
@@ -506,8 +524,41 @@ footer{padding:2rem 5rem;border-top:1px solid var(--border-color);display:flex;j
     </div>
   </div>
 
+<section id="certificates" class="certificates">
+  <div class="section-label fade-up">05 — Certificates</div>
+  <h2 class="section-title fade-up delay-1">My <em>Achievements</em></h2>
+  <div class="section-divider fade-up delay-2"></div>
+  <div class="cert-grid">
+    <!-- Forage Certificate -->
+    <div class="cert-card fade-up delay-3">
+      <div class="cert-image">
+        <img src="forage-cert.png" alt="Forage Certificate" onerror="this.src='https://via.placeholder.com/600x400/111111/c8a96e?text=Forage+Certificate'">
+      </div>
+      <div class="cert-content">
+        <div class="cert-title">GenAI Powered Data Analytics</div>
+        <div class="cert-issuer">Forage</div>
+        <div class="cert-date">July 2026</div>
+        <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:1.6">Completed practical tasks in exploratory data analysis, risk profiling, predicting delinquency with AI, and data storytelling for an AI-driven collections strategy.</p>
+      </div>
+    </div>
+    
+    <!-- KiiT Workshop Certificate -->
+    <div class="cert-card fade-up delay-4">
+      <div class="cert-image">
+        <img src="kiit-cert.png" alt="KiiT Certificate" onerror="this.src='https://via.placeholder.com/600x400/111111/c8a96e?text=KiiT+Workshop+Certificate'">
+      </div>
+      <div class="cert-content">
+        <div class="cert-title">AI / ML & Cloud Computing Workshop</div>
+        <div class="cert-issuer">K{Devs} Coding Club, KiiT</div>
+        <div class="cert-date">2026</div>
+        <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:1.6">Actively participated in a workshop focused on Artificial Intelligence, Machine Learning, and Cloud Computing concepts and practical applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="contact">
-  <div class="section-label fade-up">05 — Contact</div>
+  <div class="section-label fade-up">06 — Contact</div>
   <h2 class="section-title fade-up delay-1">Let's <em>Connect</em></h2>
   <div class="section-divider fade-up delay-2"></div>
   <div class="contact-grid">
